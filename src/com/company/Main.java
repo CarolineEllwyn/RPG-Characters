@@ -2,24 +2,32 @@ package com.company;
 
 import com.company.Hero.Mage;
 import com.company.Hero.Ranger;
+import com.company.Hero.Warrior;
 
 public class Main {
 
     public static void main(String[] args) {
 
-       Mage mage = new Mage( );
-      System.out.println(mage.getHealth());
-       mage.getStrength();
-       mage.getDexterity();
-       mage.getIntelligence();
-       mage.getLevel();
 
-       // Ranger ranger = new Ranger(360, 11,60,60,3);
-       // ranger.getHealth();
-        //ranger.getStrength();
-        //ranger.getDexterity();
-        //ranger.setIntelligence();
-        //ranger.getLevel();
+
+
+       // Warrior warrior = new Warrior();
+      //  System.out.println("level 1: " +  "Dex: "+ warrior.getDexterity() + " HP: " + warrior.getHealth() + " Level: " + warrior.getLevel() + " Str: " + warrior.getStrength());
+       // warrior.onLevelUp();
+       // System.out.println("level 2: " +  "Dex: "+ warrior.getDexterity() + " HP: " + warrior.getHealth() + " Level: " + warrior.getLevel() + " Str: " + warrior.getStrength());
+      //  warrior.onLevelUp();
+      //  System.out.println("level 3: " +  "Dex: "+ warrior.getDexterity() + " HP: " + warrior.getHealth() + " Level: " + warrior.getLevel() + " Str: " + warrior.getStrength());
+
+
+       // System.out.println(warrior.getLevel());
+       // System.out.println(warrior.getPointsToNextLevel(6));
+       // feeeeeeel uträkning warrior.gainExperience(100);
+
+        //System.out.println(warrior.getExperienceTargetByLevel(6));
+
+        Warrior myWarrior = new Warrior();
+        myWarrior.setLevel(1);
+        myWarrior.getExperience(300);
 
     }
 }

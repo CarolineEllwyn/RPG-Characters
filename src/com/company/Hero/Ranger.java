@@ -2,6 +2,7 @@ package com.company.Hero;
 
 import java.util.HashMap;
 
+//This is an interface that this class implements.
 public class Ranger implements IHero{
     private int level;
     private int health;
@@ -10,6 +11,7 @@ public class Ranger implements IHero{
     private int intelligence;
     private int experience;
 
+    //This is an constructor that make that startstatus of the object
     public Ranger() {
         this.level = 1;
         this.health = 120;
@@ -19,6 +21,7 @@ public class Ranger implements IHero{
         this.experience = 0;
     }
 
+    //This is an method that set the value on the object after its get up in level
     public void onLevelUp() {
         setHealth(this.health = health + health + 20);
         setStrength(this.strength = strength + 2);
@@ -28,8 +31,7 @@ public class Ranger implements IHero{
     }
 
 
-
-
+    //this is an method that print the status of the object when its level up
     public void printStatusOnLevelUp(){
         System.out.println("Level up!");
         System.out.println("Now level " + getLevel());
@@ -38,6 +40,7 @@ public class Ranger implements IHero{
         printDetails();
     }
 
+    //This is an method that prints the value on the object.
     public void printDetails(){
         System.out.println("Ranger details: ");
         System.out.println("HP: " + getHealth());

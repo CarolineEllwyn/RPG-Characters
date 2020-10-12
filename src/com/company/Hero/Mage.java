@@ -2,6 +2,7 @@ package com.company.Hero;
 
 import java.util.HashMap;
 
+//This is an interface that this class implements.
 public class Mage implements IHero{
     private int level;
     private int health;
@@ -10,6 +11,7 @@ public class Mage implements IHero{
     private int intelligence;
     private int experience;
 
+    //This is an constructor that make that startstatus of the object
     public Mage() {
         this.level = 1;
         this.health = 100;
@@ -19,6 +21,7 @@ public class Mage implements IHero{
         this.experience = 0;
     }
 
+    //This is an method that set the value on the object after its get up in level
     public void onLevelUp() {
         setHealth(this.health = health + health + 15);
         setStrength(this.strength = strength + 1);
@@ -27,6 +30,7 @@ public class Mage implements IHero{
         printDetails();
     }
 
+    //this is an method that print the status of the object when its level up
     public void printStatusOnLevelUp(){
         System.out.println("Level up!");
         System.out.println("Now level " + getLevel());
@@ -35,6 +39,8 @@ public class Mage implements IHero{
         printDetails();
     }
 
+
+    //This is an method that prints the value on the object.
     public void printDetails(){
         System.out.println("Mage details: ");
         System.out.println("HP: " + getHealth());
@@ -98,6 +104,7 @@ public class Mage implements IHero{
     public void setExperience(int experience){
         this.experience = experience;
     }
+
 
     public HashMap<Integer, Integer> getPointsToNextLevels(int increasedExperience){
         int pointsToNextLevel = 100;

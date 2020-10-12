@@ -12,6 +12,9 @@ public class Main {
         //System.out.println(warrior.getExperienceTargetByLevel(6));
 
         Warrior myWarrior = new Warrior();
+
+        myWarrior.getPointsToLevelUp(5);
+
         myWarrior.setLevel(1);
         myWarrior.getExperience(300);
 
